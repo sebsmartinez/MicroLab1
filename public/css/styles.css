@@ -1,33 +1,30 @@
-/* styles.css */
 html, body {
     height: 100%;
     margin: 0;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-  }
-  
-  /* Header Styling */
-  header {
+}
+
+header {
     background-color: #333;
     padding: 10px;
     color: #fff;
-    text-align: center;
-  }
-  
-  /* Navigation Styling */
-  header nav {
+    text-align: center; /* Default header centering */
+}
+
+header nav {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
@@ -36,64 +33,75 @@ html, body {
     background-color: #444;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     background-color: #666;
-  }
-  
-  /* Main Content Styling */
-  main {
+}
+
+main {
     flex: 1;
     padding: 20px;
-  }
-  
-  /* Button Styling */
-  button {
+}
+
+/* Apply centering to h1 only on the API page */
+.api-page h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for the Fetch Data Button */
+button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    display: inline-block; /* Ensure the button does not expand to full width */
-    width: auto; /* Allow the button to size based on its content */
-    margin: 10px auto; /* Center the button horizontally */
+    display: inline-block; 
+    width: auto; 
+    margin: 10px auto;
     background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  /* Results Section Styling */
-  #results {
+}
+
+/* Centering the Results */
+#results {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds space between items */
     margin-top: 20px;
-  }
-  
-  .item {
+}
+
+/* Styling for Each Item */
+.item {
     background: #fff;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
-  }
-  
-  .item h2 {
+    width: 250px; /* Fixed width for the item */
+    text-align: center; /* Centers text within each item */
+}
+
+.item h2 {
     margin: 0 0 5px;
-  }
-  
-  .item p {
+}
+
+.item p {
     margin: 0;
     color: #555;
-  }
-  
-  /* Footer Styling */
-  footer {
+}
+
+/* Footer styling */
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 15px 10px;
-  }
-  
+}

@@ -13,7 +13,7 @@ document.getElementById('fetch-data').addEventListener('click', async () => {
   
   function displayItems(items) {
     const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = ''; // Clear previous content
+    resultsDiv.innerHTML = ''; 
   
     if (!items || items.length === 0) {
       resultsDiv.innerHTML = '<p>No items found.</p>';
